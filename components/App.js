@@ -1,13 +1,13 @@
 class App extends React.Component {
   constructor() {
     super();
-    this.state = {
+    this.state = {//inicjujemy stan komponentu
       searchText: '',
       users: []
     };
   }
 
-  onChangeHandle(event) {
+  onChangeHandle(event) {//dynamicznie reaguje na zmiany treści inputa
     this.setState({searchText: event.target.value})
   }
 
